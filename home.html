@@ -1,0 +1,1053 @@
+<!-- Name : Kavish H Shah
+     Roll : C2-46
+     EnNo : 22002171310123 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Tracker</title>
+    <link rel="icon" href="images/TRIP-TRACKER.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9999;">
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TRIP-</span>TRACKER</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="home.html" class="nav-item nav-link">Home</a>
+                        <a href="Hotel.html" class="nav-item nav-link">Hotel</a>
+                        <a href="MyPackages.html" class="nav-item nav-link">Tour Packages</a>
+                        <ul class="navbar-nav" style="margin-left: auto;">
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i>
+                                </a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="images/Home_carousel/india.jpg">
+                <div class="content">
+                    <p>Welcome To</p>
+                    <h2>India</h2>
+                    <p>
+                        Embark on an unforgettable journey through the heart of India's rich culture and vibrant landscapes.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-2.jpg">
+                <div class="content">
+                    <p>Visit</p>
+                    <h2>Rajasthan</h2>
+                    <p>
+                        Experience the royal splendor and captivating heritage of Rajasthan, where every corner tells a story of majestic forts and colorful traditions.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-3.jpg">
+                <div class="content">
+                    <p>Visit</p>
+                    <h2>Varanasi</h2>
+                    <p>
+                        Step into the timeless city of Varanasi, where spirituality meets ancient mystique along the sacred banks of the Ganges
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-4.jpg">
+                <div class="content">
+                    <p>Visit</p>
+                    <h2>Kerela</h2>
+                    <p>
+                        Discover the enchanting allure of Kerala, where serene backwaters, lush greenery, and vibrant traditions await to embrace you in their natural splendor.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/red fort.webp">
+                <div class="content">
+                    <p>Visit</p>
+                    <h2>Delhi</h2>
+                    <p>
+                        Welcome to Delhi, where the past meets the present in a bustling mosaic of history, culture, and modernity, inviting you to explore its vibrant streets and iconic landmarks.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-6.jpg">
+                <div class="content">
+                    <p>Visit</p>
+                    <h2>Kashmir</h2>
+                    <p>
+                        Enter the paradise of Kashmir, where breathtaking landscapes, serene lakes, and snow-capped mountains create a haven of tranquility and awe-inspiring beauty.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-7.jpg">
+                <div class="content">
+                    <p>Visit</p>
+                    <h2>Meghalaya</h2>
+                    <p>
+                        Welcome to Meghalaya, where mist-covered hills, cascading waterfalls, and vibrant cultures converge to offer an unforgettable journey into nature's embrace.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-8.jpg">
+                <div class="content">
+                    <p>Visit</p>
+                    <h2>Agra</h2>
+                    <p>
+                        Welcome to Agra, home to the majestic Taj Mahal and a treasure trove of Mughal heritage, where every corner whispers tales of love, history, and architectural marvels.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="images/Home_carousel/india.jpg">
+                <div class="content">
+                    India
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-2.jpg">
+                <div class="content">
+                    Rajasthan
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-3.jpg" >
+                <div class="content">
+                    Varanasi
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-4.jpg">
+                <div class="content">
+                    Kerela
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-5.jpg">
+                <div class="content">
+                    Delhi
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-6.jpg">
+                <div class="content">
+                    Kashmir
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-7.jpg">
+                <div class="content">
+                    Meghalaya
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Home_carousel/carousel-8.jpg">
+                <div class="content">
+                    Agra
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About section starts -->
+    <div class="container-fluid">
+        <div class="container pt-5">
+            <div class="text-center">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
+                <h1>Know more about us</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 position-relative" style="min-height: 500px;">
+                    <img class="w-100 h-100 position-absolute" src="images/Home_about/about.jpg" style="object-fit: cover;">
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5 position-relative">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <!-- <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6> -->
+                        <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                        <p class="mb-4">Welcome to Trip Tracker. We're dedicated to inspiring and guiding fellow travelers on unforgettable journeys. From expert tips to personalized recommendations, let us help you explore the world and create lasting memories. Let's journey together!</p>
+                      
+                        <div class="row gy-2 gx-4 mb-4">
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/Home_about/about-1.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/Home_about/about-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <a href="" class="btn mt-1">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- About section ends -->
+
+    <!-- Destination Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 py-3">
+            <div class="text-center mb-3 py-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
+                <h1>Explore Top Destination</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="destination-item mb-2" style="position: relative; overflow:hidden;">
+                        <img class="img-fluid" src="images/Home_Destination/Kashmir.avif" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Kashmir</h5>
+                            <span>10 Nights</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="destination-item mb-2" style="position: relative; overflow:hidden;">
+                        <img class="img-fluid" src="images/Home_Destination/Andaman.avif" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Andaman Nicobar Islands</h5>
+                            <span>8 Nights</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="destination-item mb-2" style="position: relative; overflow:hidden;">
+                        <img class="img-fluid" src="images/Home_Destination/kerela.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Kerela</h5>
+                            <span>7 Nights</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="destination-item mb-2" style="position: relative; overflow:hidden;">
+                        <img class="img-fluid" src="images/Home_Destination/Goa.avif" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Goa</h5>
+                            <span>5 Nights</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="destination-item mb-2" style="position: relative; overflow:hidden;">
+                        <img class="img-fluid" src="images/Home_Destination/Himachal.avif" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Himachal</h5>
+                            <span>7 Nights</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="destination-item mb-2" style="position: relative; overflow:hidden;">
+                        <img class="img-fluid" src="images/Home_Destination/North-east.avif" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">North-East</h5>
+                            <span>8 Nights</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
+                <h1>Tours & Travel Services</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
+                        <h5 class="mb-2">Travel Guide</h5>
+                        <p class="m-0">Your ultimate travel companion, offering expert guidance and insider tips for unforgettable adventures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">Ticket Booking</h5>
+                        <p class="m-0">Seamless ticket booking for your next adventure awaits – book with ease and embark on unforgettable journeys.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">Hotel Booking</h5>
+                        <p class="m-0">Discover your perfect stay effortlessly with our convenient hotel booking service your gateway to comfort and adventure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Swiper starts -->
+    <div class="container-fluid">
+        <div class="container pt-5">
+            <div class="text-center">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Discover</h6>
+                <h1>Top Destinations</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swipe">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="places-box places-box1">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Vasco Beach</h2>
+                        <p>Goa</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box2">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Statue Of Unity</h2>
+                        <p>Gujarat</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box3">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Raigarh Fort</h2>
+                        <p>Maharastra</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box4">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Pahalgam</h2>
+                        <p>Kashmir</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box5">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Nilgiri Mountain</h2>
+                        <p>Ooty</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box6">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Kumbhalgarh Fort</h2>
+                        <p>Rajasthan</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box7">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Hidimba Temple</h2>
+                        <p>Manali</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box8">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Dawki</h2>
+                        <p>Meghalaya</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box9">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Cochin</h2>
+                        <p>Kerela</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="places-box places-box10">
+                  <div class="places-name">
+                    <center>
+                      <div class="places-content">
+                        <h2>Buddha Temple</h2>
+                        <p>Sikkim</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+    
+
+    <!-- Swiper ends -->
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Mega Offer</h6>
+                        <h1 class="text-white"><span class="text-primary">30% OFF</span> For Honeymoon</h1>
+                    </div>
+                    <p class="text-white">Unlock the magic of your honeymoon with our seamless sign-up process. From dreamy destinations to romantic getaways, let us help you create cherished memories that last a lifetime. Start planning your perfect escape today.</p>
+                    <ul class="list-inline text-white m-0">
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Tailored honeymoon packages.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Expert destination recommendations.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Hassle-free booking process.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header text-center p-4">
+                            <h1 class="text-white m-0">Sign Up Now</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Your name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Your email" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Select a destination</option>
+                                        <option value="1">Maldives</option>
+                                        <option value="2">Paris</option>
+                                        <option value="3">London 1</option>
+                                    </select>
+                                </div>
+                                <div class="btn-footer">
+                                    <button class="btn btn-block py-3" type="submit">Sign Up Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration End -->
+
+    <!-- Packages section starts -->
+
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
+                <h1>Trip Ideas From India</h1>
+            </div>
+            <div class="container pt-5 pb-3">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 col-md-auto">
+                        <button type="button" class="btn btn-outline-success filter-button active" onclick="toggleActive(this, 'all')">All</button>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button type="button" class="btn btn-outline-success filter-button" onclick="toggleActive(this, 'romantic')">Romantic</button>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button type="button" class="btn btn-outline-success filter-button" onclick="toggleActive(this, 'family-friendly')">Family-friendly</button>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button type="button" class="btn btn-outline-success filter-button" onclick="toggleActive(this, 'wildlife')">WildLife</button>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button type="button" class="btn btn-outline-success filter-button" onclick="toggleActive(this,'beach')">Beach</button>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button type="button" class="btn btn-outline-success filter-button" onclick="toggleActive(this,'cultural')">Cultural</button>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button type="button" class="btn btn-outline-success filter-button" onclick="toggleActive(this,'nature')">Nature</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="tripCards">
+                    <div class="col">
+                        <div class="trip-item all romantic">
+                            <img src="images/Home_packages/Kashmir_romantic.jpg" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <!-- <i class="fas fa-solid fa-rupee-sign"></i> -->
+                                    <span>Kashmir, India</span>
+                                </div>
+                                <h4 class="card-title">Lavish Honeymoon in Srinagar<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Discover romance in Srinagar's serene beauty. From picturesque houseboats to enchanting gardens, create timeless memories on your honeymoon.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col">
+                        <div class="trip-item all romantic">
+                            <img src="images/Home_packages/goa_romantic.avif" alt="Trip 2" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Goa, India</span>
+                                </div>
+                                <h4 class="card-title">Romance & Wilderness in Goa <i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Experience romance amidst Goa's wilderness. Discover secluded beaches and lush forests for an unforgettable adventure with your loved one.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all romantic">
+                            <img src="images/Home_packages/Darjeeling.avif" alt="Trip 3" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Darjeeling, India</span>
+                                </div>
+                                <h4 class="card-title">Darjeeling Honeymoon special<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Darjeeling: Your romantic getaway . From breathtaking mountain  views to Scenic views , cozy hideaways , unforgettable adventure moments.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all family-friendly">
+                            <img src="images/Home_packages/saputara_family.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Gujarat, India</span>
+                                </div>
+                                <h4 class="card-title">Road Trip to Saputara<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Embark on an unforgettable road trip to Saputara. Discover scenic routes, hidden gems, and adventure along the way full of adventure and nature.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all family-friendly">
+                            <img src="images/Home_packages/Khimsar Fort 2.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Rajasthan, India</span>
+                                </div>
+                                <h4 class="card-title">Pleasant Homestay in Udaipur<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Experience the charm of Udaipur with our pleasant homestay. Immerse yourself in local culture and hospitality for an unforgettable stay..</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all family-friendly">
+                            <img src="images/Home_packages/Maharastra_family.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Maharashtra, India</span>
+                                </div>
+                                <h4 class="card-title">Delightful Maharashtra Vacation<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Explore Maharashtra's charm. From vibrant cities to serene beaches, experience its diverse beauty on your vacation with full of enjoyment.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all nature">
+                            <img src="images/Home_packages/Sonmarg 2.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Kashmir, India</span>
+                                </div>
+                                <h4 class="card-title">Paradise on Earth<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Discover paradise on Earth. From breathtaking landscapes to serene retreats, experience true bliss on your journey to most beautiful heaven.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all nature">
+                            <img src="images/Home_packages/Uttrakhand_nature.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Uttrakhand, India</span>
+                                </div>
+                                <h4 class="card-title">Enjoyable Villa Stay in Rishikesh<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">"Experience an enjoyable villa stay in Rishikesh. Unwind amidst nature's tranquility and indulge in the serene ambiance of the Himalayas."</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all nature">
+                            <img src="images/Home_packages/Mussoorie.jpg" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Mussoorie, India</span>
+                                </div>
+                                <h4 class="card-title">Mesmerising Mussoorie<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Experience the mesmerizing beauty of Mussoorie. From panoramic vistas to charming hillside retreats, immerse yourself in nature's splendor.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all beach">
+                            <img src="images/Home_packages/Goa_beach.webp" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Goa, India</span>
+                                </div>
+                                <h4 class="card-title">All-Inclusive 3N Holiday<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Indulge in an all-inclusive 3-night holiday in Goa. From sun-kissed beaches to vibrant nightlife, experience the perfect blend of relaxation and adventure.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all beach">
+                            <img src="images/Home_packages/lakshadweeplead-1366x768.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Lakshadweep, India</span>
+                                </div>
+                                <h4 class="card-title">Serenity at Lakshadweep<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Discover serenity in Lakshadweep. From pristine beaches to crystal-clear waters, immerse yourself in the tranquility of this tropical paradise.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all beach">
+                            <img src="images/Home_packages/andaman.jpg" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Andaman Islands, India</span>
+                                </div>
+                                <h4 class="card-title">Short Escape to Andaman<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Embark on a short escape to Andaman. Experience pristine beaches, vibrant marine life, and unforgettable adventures in this tropical haven.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all cultural">
+                            <img src="images/Home_packages/Har ki Pauri.webp" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Uttarakhand, India</span>
+                                </div>
+                                <h4 class="card-title">Spiritual Trip to Uttarakhand<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Experience spiritual solace in Uttarakhand. Explore ancient temples and serene landscapes for a journey of inner peace.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all cultural">
+                            <img src="images/Home_packages/Historical Somnath Mahadev Temple.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Gujarat, India</span>
+                                </div>
+                                <h4 class="card-title">Spiritual Retreat in Somnath<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Seek spiritual solace in Somnath. Immerse yourself in sacred rituals and serene surroundings for a rejuvenating retreat.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all cultural">
+                            <img src="images/Home_packages/kerela_cultural.avif" alt="Trip 1" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Kerela, India</span>
+                                </div>
+                                <h4 class="card-title">Spiritual South India Tour<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Discover spiritual bliss in Kerala, South India. Explore ancient temples and serene landscapes on your transformative journey.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all wildlife">
+                            <img src="images/Home_packages/Kaziranga - Wildlife Safari.webp" alt="Trip 3" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Assam, India</span>
+                                </div>
+                                <h4 class="card-title">Wildlife - North East Special<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Embark on a wildlife adventure in North East India. Explore diverse habitats, encounter rare species, and immerse yourself in the raw beauty of nature.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all wildlife">
+                            <img src="images/Home_packages/A tiger inside Kabini forest.avif" alt="Trip 3" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Kabini, India</span>
+                                </div>
+                                <h4 class="card-title">Kabini Wildlife Quest<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Embark on a thrilling wildlife quest in Kabini. Explore lush jungles, encounter majestic creatures, and immerse yourself in the wonders of nature.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="trip-item all wildlife">
+                            <img src="images/Home_packages/Herd of deer.avif" alt="Trip 3" class="trip-image">
+                            <div class="trip-content">
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Madhya Pradesh, India</span>
+                                </div>
+                                <h4 class="card-title">Discover Wild Horizons<i class="fas fa-heart" style="color: #e74c3c;"></i></h4>
+                                <p class="card-text">Explore the wild horizons of Madhya Pradesh. Dive into lush forests, encounter exotic wildlife, and uncover the raw beauty of nature.</p>
+                                <div class="card-info">
+                                    <span><i class="fas fa-star" style="color: #f1c40f;"></i> 4.5 (123 reviews)</span>
+                                    <span><i class="fas fa-solid fa-rupee-sign" style="color: #7AB730;"></i> 1500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Packages section ends -->
+
+
+    <!-- gallery section starts -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Gallery</h6>
+                <h1>Our Gallery</h1>
+            </div>
+            <div class="gallery">
+                <img src="images/Home_Gallery/v_1.jpg" alt="" class="vertical">
+                <img src="images/Home_Gallery/h1.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/b_1.jpg" alt="" class="big">
+                <img src="images/Home_Gallery/v_2.jpg" alt="" class="vertical">
+                <img src="images/Home_Gallery/b_2.jpg" alt="" class="big">
+                <img src="images/Home_Gallery/h2.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/v_3.jpg" alt="" class="vertical">
+                <img src="images/Home_Gallery/b_3.jpg" alt="" class="big">
+                <img src="images/Home_Gallery/s_1.jpg" alt="" class="square">
+                <img src="images/Home_Gallery/h3.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/s_2.jpg" alt="" class="square">
+                <img src="images/Home_Gallery/h4.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/s_3.jpg" alt="" class="square">
+                <img src="images/Home_Gallery/b_4.jpg" alt="" class="big">
+                <img src="images/Home_Gallery/v_4.jpg" alt="" class="vertical">
+                <img src="images/Home_Gallery/v_5.jpg" alt="" class="vertical">
+                <img src="images/Home_Gallery/h5.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/s_4.jpg" alt="" class="square">
+                <img src="images/Home_Gallery/h6.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/v_6.jpg" alt="" class="vertical">
+                <img src="images/Home_Gallery/b_5.jpg" alt="" class="big">
+                <img src="images/Home_Gallery/h7.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/v_7.jpg" alt="" class="vertical">
+                <img src="images/Home_Gallery/b_6.jpg" alt="" class="big">
+                <img src="images/Home_Gallery/h8.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/s_5.jpg" alt="" class="square">
+                <img src="images/Home_Gallery/h9.jpg" alt="" class="horizontal">
+                <img src="images/Home_Gallery/s_6.jpg" alt="" class="square">
+                <img src="images/Home_Gallery/h10.jpg" alt="" class="horizontal">
+                <!-- <img src="image/gallery/s_7.jpg" alt="" class="square"> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- gallery section ends -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TRIP-</span>TRACKER</h1>
+                </a>
+                <p>Explore the world with Trip Tracker. Embark on unforgettable journeys, discover hidden gems, and create lasting memories with our curated travel experiences.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-link col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mx-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="footer-link col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mx-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mx-2"></i>123 Street, Ahmedabad, India</p>
+                <p><i class="fa fa-phone-alt mx-2"></i>+9283640294</p>
+                <p><i class="fa fa-envelope mx-2"></i>kavish@gmail.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 15px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn px-3" style="padding: 8px;">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 mx-0 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by <a href="#">Mr. Kavish Shah</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- back-to-top starts-->
+
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
+
+    <!-- back-to-top ends-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="app.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: -100,
+        depth: 500,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

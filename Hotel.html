@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip-Tracker</title>
+    <link rel="icon" href="images/TRIP-TRACKER.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="hotel.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TRIP-</span>TRACKER</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="MyPackages.html">My Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rooms">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login Now</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn" href="#">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar section exit -->
+
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper p-0">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(images/Hotel_images/images/slider/slider2.webp);">
+                    <div class="slide-caption text-center">
+                        <div>
+                            <h1 class="display-2 ">welcome to hotel in India</h1>
+                            <p>Experience luxury redefined amidst the glittering skyline of India with our exquisite range of hotels, where opulence meets unparalleled hospitality. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(images/Hotel_images/images/slider/slider1.webp);">
+                    <div class="slide-caption text-center">
+                        <div>
+                            <h1 class="display-2 ">welcome to hotel in India</h1>
+                            <p>Indulge in luxury and immerse yourself in the rich tapestry of Indian hospitality across our exquisite collection of hotels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="container booking-area">
+            <form class="row">
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date" class="form-control" placeholder="Date">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date" class="form-control" placeholder="Date">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <button type="submit" class="main-btn rounded-2 px-lg-3">Check Availability</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Banner section exit -->
+
+    <!-- About section -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row flex-lg-row flex-column-reverse ">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h3>Welcome to <span> <br class="d-none d-lg-block">
+                            The Haven</span> of your weekend</h3>
+                    <p>Welcome to our world of unparalleled luxury and charm. Step into a realm where every detail
+                         whispers elegance and every moment promises indulgence. Our hotels offer a sanctuary of sophistication, 
+                         where impeccable service meets breathtaking design. From tranquil retreats to vibrant urban havens, our
+                          properties cater to every taste and desire. Join us on a journey where comfort, style, and unparalleled
+                           experiences converge. Welcome to a place where every stay is a masterpiece waiting to be discovered.</p>
+                    <a href="#" class="main-btn mt-4">Explore</a>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+                    <img decoding="async" src="images/Hotel_images/images/about-img.svg" class="img-fluid" alt="About Us">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About section exit -->
+
+    <!-- Rooms section -->
+    <section id="rooms" class="rooms_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    
+                    <h3>Our Favorite Rooms</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img decoding="async" src="images/Hotel_images/images/room/room1.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Presidential Suite</h5>
+                                <p class="text-white">A luxurious and spacious suite typically reserved for dignitaries, 
+                                    celebrities, or VIP guests. It often features multiple bedrooms, a separate living area,
+                                     dining space, and exclusive amenities.</p>
+                                <p class="text-white fw-bold mt-lg-4"><i class="fas fa-solid fa-rupee-sign" style="color: #fff;"></i>12000 / Per Night</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img decoding="async" src="images/Hotel_images/images/room/room2.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Executive Suite</h5>
+                                <p class="text-white">Designed for business travelers or guests seeking extra space and amenities,
+                                     an Executive Suite usually includes a separate workspace along with a comfortable living area
+                                      and bedroom.</p>
+                                <p class="text-white fw-bold mt-lg-4"><i class="fas fa-solid fa-rupee-sign" style="color: #fff;"></i>4000 / Per Night</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-item">
+                        <img decoding="async" src="images/Hotel_images/images/room/room3.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Deluxe Room</h5>
+                                <p class="text-white"> A step up from standard accommodations, a Deluxe Room typically 
+                                    offers enhanced amenities, more space, and upgraded furnishings, providing guests 
+                                    with a more luxurious experience.</p>
+                                <p class="text-white fw-bold mt-lg-4"><i class="fas fa-solid fa-rupee-sign" style="color: #fff;"></i>3500 / Per Night</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rooms Section Exit -->
+
+    <!-- Services section -->
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>We Are Here For You</h6>
+                    <h3>Our Awesome Services</h3>
+                </div>
+            </div>
+            <div class="row align-items-center service-item-wrap">
+                <div class="col-lg-7 p-lg-0">
+                    <!--Service Area Start-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane active show" id="spa" role="tabpanel">
+                            <img src="images/Hotel_images/images/services/service1.webp" alt="">
+                        </div>
+                        <div class="tab-pane " id="restaurent" role="tabpanel">
+                            <img src="images/Hotel_images/images/services/service2.webp" alt="">
+                        </div>
+                        <div class="tab-pane" id="swimming" role="tabpanel">
+                            <img src="images/Hotel_images/images/services/service3.webp" alt="">
+                        </div>
+                        <div class="tab-pane" id="conference" role="tabpanel">
+                            <img  src="images/Hotel_images/images/services/service6.webp" alt="">
+                        </div>
+                    </div>
+                    <!--Service Area End-->
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <!--Service Tab Menu Area Start-->
+                    <div class="service-menu-area">
+                        <ul class="nav">
+                            <li>
+                                <a data-bs-toggle="tab" href="#spa" class="active">
+                                    <span class="service-icon">
+                                        <img decoding="async" src="images/Hotel_images/images/services/service-icon1.webp" alt="">
+                                    </span>
+                                    <h5>Spa, beauty & Health</h5>
+                                    <p><span>Spa and beauty </span>the most relevant feature provided by our hotel staff members to our customers for their betterment</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#restaurent">
+                                    <span class="service-icon">
+                                        <img decoding="async" src="images/Hotel_images/images/services/service-icon2.webp" alt="">
+                                    </span>
+                                    <h5>Restaurant</h5>
+                                    <p><span>Restaurant </span>Where flavors dance on your palate, creating a symphony of culinary delight with every bite.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#swimming">
+                                    <span class="service-icon">
+                                        <img decoding="async" src="images/Hotel_images/images/services/service-icon3.webp" alt="">
+                                    </span>
+                                    <h5>Swimming Pool</h5>
+                                    <p><span>Swimming</span> pool, Dive into relaxation and refreshment, where crystal-clear waters beckon you to unwind and rejuvenate amidst serene surroundings</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#conference">
+                                    <span class="service-icon">
+                                        <img decoding="async" src="images/Hotel_images/images/services/service-icon4.webp" alt="">
+                                    </span>
+                                    <h5>Conference Hall</h5>
+                                    <p><span>Conference</span> Where ideas converge and innovation flourishes, providing a dynamic space for collaboration, inspiration, and meaningful exchanges</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Service Tab Menu Area End-->
+                </div>
+            </div>
+        </div>
+        <div class="counter mt-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count1"></span>+
+                        </h1>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count2"></span>+
+                            </h1>
+                            <p>New Friendships</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count3"></span>+
+                            </h1>
+                            <p>Five Start Ratings</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count4"></span>+
+                            </h1>
+                            <p>Served Breakfast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Services section Exit -->
+
+    
+    <!-- Gallery section -->
+    <section id="gallery" class="gallery_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>Best Pictures Of Our Hotel</h6>
+                    <h3>Our Gallery</h3>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="images/Hotel_images/images/gallery/1.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="images/Hotel_images/images/gallery/2.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="images/Hotel_images/images/gallery/3.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img decoding="async" src="images/Hotel_images/images/gallery/4.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-md-6 gallery-item">
+                    <img decoding="async" src="images/Hotel_images/images/gallery/5.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"> </div>
+                </div>
+                <div class="col-md-6 gallery-item">
+                    <img decoding="async" src="images/Hotel_images/images/gallery/6.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Exit -->
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TRIP-</span>TRACKER</h1>
+                </a>
+                <p class="text-white-50 mb-2">Explore the world with Trip Tracker. Embark on unforgettable journeys, discover hidden gems, and create lasting memories with our curated travel experiences.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter" style="color:#7AB730"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f" style="color:#7AB730"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in" style="color:#7AB730"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram" style="color:#7AB730"></i></a>
+                </div>
+            </div>
+            <div class="footer-link col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mx-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="footer-link col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mx-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mx-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p class="text-white-50 mb-2"><i class="fa fa-map-marker-alt mx-2"></i>123 Street, Ahmedabad, India</p>
+                <p class="text-white-50 mb-2"><i class="fa fa-phone-alt mx-2"></i>+9283640294</p>
+                <p class="text-white-50 mb-2"><i class="fa fa-envelope mx-2"></i>kavish@gmail.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 15px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn px-3" style="padding: 8px;">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 mx-0 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by <a href="#">Mr. Kavish Shah</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+        <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Js Link -->
+    <script src="hotelscript.js"></script>
+</body>
+
+</html>
